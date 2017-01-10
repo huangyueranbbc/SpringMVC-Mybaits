@@ -22,6 +22,10 @@
 </script>
 </head>
 <body>
+	当前用户${user.username}
+	<c:if test="${user.username!=null }">
+		<a href="${pageContext.request.contextPath }/logout.action">退出</a>
+	</c:if> 
 	<form name="itemsForm"
 		action="${pageContext.request.contextPath }/items/queryItems.action"
 		method="post">

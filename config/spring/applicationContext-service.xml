@@ -16,4 +16,7 @@
 	<!-- 定义商品管理的service -->
 	<bean id="itemsService" class="cn.hyr.ssm.service.impl.ItemsServiceImpl"></bean>
 
+	<!-- 定义用户管理的service -->
+	<bean id="userService" class="cn.hyr.ssm.service.impl.UserServiceImpl"></bean>
+
 </beans>

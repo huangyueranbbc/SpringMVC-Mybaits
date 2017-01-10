@@ -243,6 +243,7 @@ public class ItemsController {
 	// 查询商品信息，输出json
 	/// itemsView/{id}里边的{id}表示占位符，通过@PathVariable获取占位符中的参数，
 	// 如果占位符中的名称和形参名一致，在@PathVariable可以不指定名称
+	// http://localhost:8080/springmvc_mybaits_3/items/itemsView/3  ----------->这就是restful  	/user/100/orderId/50/age/15/sex/男
 	@RequestMapping("/itemsView/{id}")
 	public @ResponseBody ItemsCustom itemsView(@PathVariable("id") Integer id) throws Exception {
 

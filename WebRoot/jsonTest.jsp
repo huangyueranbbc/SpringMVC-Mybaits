@@ -16,10 +16,10 @@
 			url : '${pageContext.request.contextPath }/requestJson.action',
 			contentType : 'application/json;charset=utf-8',
 			//数据格式是json串，商品信息
-			data : '{"name":"手机","price":999}',
+			data : '{"name":"手机","price":888}',
 			success : function(data) {//返回json结果
-				alert(data);
-			}
+				alert(data.name+":"+data.price); 
+			} 
 
 		});
 
